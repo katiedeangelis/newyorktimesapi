@@ -1,0 +1,8 @@
+.search-header {
+    display: flex;
+    justify-content: center;
+    border: #17035f;
+    background-color: #17035f;
+    color: white;
+    height: 100px;
+}
