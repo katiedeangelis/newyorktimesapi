@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Trivia Game</title>
+    <title>NYT Search</title>
 
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -14,48 +14,67 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
     <script src=""></script>
+    <script src="https://use.fontawesome.com/2b1d19e503.js"></script>
 </head>
 
 <body>
 
-    <div class="search-header">
-        <h1 class="glyphicon glyphicon-search">New York Times Search
-        </h1>
-    </div>
-    <div class="main-search-form">
-        <div class="forminfo">
-            <p class="search-term-text">Search Term:
-                <br>
-                <br>
-                <input type="text">
-            </p>
-            <br>
-            <p class="number-records-text">Number of Records to Retrieve:
-                <br>
-                <br>
-                <input type="text">
-            </p>
-            <br>
-            <p>Start Year (Optional):
-                <br>
-                <br>
-                <input type="text">
-            </p>
-            <br>
-            <p>End Year (Optional):
-                <br>
-                <br>
-                <input type="text">
-            </p>
-            <button type="button" class="btn btn-default">Search</button>
-            <button type="button" class="btn btn-default">Clear Results</button>
-            <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="main-body">
+                    <div class="search-header">
+                        <h1 class="nyt-search">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i> New York Times Search</h1>
+                    </div>
+                    <div class="panel panel-default main-search-body">
+                        <div class="panel-heading main-search-form">
+                            <h3 class="panel-title">
+                                <i class="fa fa-folder-open" aria-hidden="true"></i> Search Parameters</h3>
+                        </div>
+                        <div class="panel-body forminfo">
+                            <p class="search-term-text">Search Term:
+                                <input type="text">
+                            </p>
+                            <p class="number-records-text">Number of Records to Retrieve:
+                                <input type="number" min="0">
+                            </p>
+                            <p>Start Year (Optional):
+                                <input type="date">
+                            </p>
+                            <p>End Year (Optional):
+                                <input type="date">
+                            </p>
+                            <button type="button" class="btn btn-default">
+                                <i class="fa fa-search" aria-hidden="true"></i> Search</button>
+                            <button type="button" class="btn btn-default">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i> Clear Results</button>
+                        </div>
+                    </div>
+                    <div class="panel panel-default main-article-body">
+                        <div class="panel-heading top-article-header">
+                            <h3 class="panel-title">
+                                <i class="fa fa-file-text" aria-hidden="true"></i> Top Articles</h3>
+                        </div>
+                        <div class="panel-body main-articles">
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="made-by">
+                    Made by the amazingly talented Team #1
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
         </div>
     </div>
-
-
-
-
+    </div>
 
 </body>
 
