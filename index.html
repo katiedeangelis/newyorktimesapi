@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script type="text/javascript " src="assets/javascript/nytSearch.js"></script>
     <script src="https://use.fontawesome.com/2b1d19e503.js"></script>
 </head>
 
@@ -37,20 +37,20 @@
                         </div>
                         <div class="panel-body forminfo">
                             <p class="search-term-text">Search Term:
-                                <input type="text">
+                                <input id="searchTerm" type="text">
                             </p>
                             <p class="number-records-text">Number of Records to Retrieve:
-                                <input type="number" min="0">
+                                <input id="numberOfResults" type="number" min="0">
                             </p>
                             <p>Start Year (Optional):
-                                <input type="date">
+                                <input id="startYear" type="date">
                             </p>
                             <p>End Year (Optional):
-                                <input type="date">
+                                <input id="endYear" type="date">
                             </p>
-                            <button type="button" class="btn btn-default">
+                            <button id="search" type="button" class="btn btn-default">
                                 <i class="fa fa-search" aria-hidden="true"></i> Search</button>
-                            <button type="button" class="btn btn-default">
+                            <button id="clear" type="button" class="btn btn-default">
                                 <i class="fa fa-trash-o" aria-hidden="true"></i> Clear Results</button>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             <h3 class="panel-title">
                                 <i class="fa fa-file-text" aria-hidden="true"></i> Top Articles</h3>
                         </div>
-                        <div class="panel-body main-articles">
+                        <div id="topArticles" class="panel-body main-articles">
 
                         </div>
                     </div>
